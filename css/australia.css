@@ -1,0 +1,80 @@
+﻿html body .icon-section:after {background-image:url(/images/useruploadedimages/1798/icon-australia.png); background-repeat:no-repeat;}
+
+html body .section {color:#f15e22;}
+html body .main-area.section {background-color:#f25f23 !important;}
+html body .block.section {background-color:#f25f23 !important;}
+html body .block.section.opaque {background-color:rgba(242, 95, 35, .9) !important;}
+html body .block.section.hover:hover,
+html body .block.section.hover:focus {background:rgba(57, 54, 51, .2) !important;}
+html body #area-select .block.section.hover:hover,
+html body #area-select .block.section.hover:focus {background:#fc8228 !important;}
+html body .block.section.opaque.hover:hover,
+html body .block.section.opaque.hover:focus {background-color:rgba(242, 95, 35, .9) !important;}
+
+html body .section.cut-bg {}
+html body .section.cut-bg:before {border-color:#f25f23 transparent;}
+html body .section.hover.cut-bg:hover:before,
+html body .section.hover.cut-bg:focus:before {border-color:#fc8228 transparent;}
+html body .section.cut-bg:after {border-color:#f25f23;}
+html body .section.hover.cut-bg:hover:after,
+html body .section.hover.cut-bg:focus:after {border-color:#fc8228;}
+
+html body .section.opaque.cut-bg {}
+html body .section.opaque.cut-bg:before {border-color:rgba(242, 95, 35, .9) transparent;}
+html body .section.opaque.hover.cut-bg:hover:before,
+html body .section.opaque.hover.cut-bg:focus:before {border-color:rgba(242, 95, 35, .9) transparent;}
+html body .section.opaque.cut-bg:after {border-color:rgba(242, 95, 35, .9);}
+html body .section.opaque.hover.cut-bg:hover:after,
+html body .section.opaque.hover.cut-bg:focus:after {border-color:rgba(242, 95, 35, .9);}
+
+html body .section .inline-menu li a {border-bottom:1px solid rgba(255, 255, 255, 0.5);}
+
+html body .section .icon:after {color:#F15E22;}
+html body .section .icon-simple:after {color:#fff;}
+html body .icon.section:after {color:#F15E22;}
+
+html body div.block-list .block.hover:hover,
+html body div.block-list .block.hover:focus {border-color:#F25F23; background:#fff;}
+html body div.block-list .block.regular.hover:hover,
+html body div.block-list .block.regular.hover:focus {background:#fff !important;}
+html body div.block-list .block.hover:hover .section,
+html body div.block-list .block.hover:focus .section {background-color:#d75621 !important;}
+html body ul.block-list > li:hover a,
+html body ul.block-list > li:focus a {border-color:#F25F23;}
+
+html body #section-menu #TopMenu .menu .CMLevel1,
+html body #LeftMenu .RadPanelBar .MenuItemOne {background-color:#f25f23;}
+html body #section-menu #TopMenu .menu .CMLevel1Selected,
+html body #LeftMenu .RadPanelBar .MenuItemOneClicked {background:#fff; color:#3D3935;}
+html body #section-menu #TopMenu .menu .CMLevel2,
+html body #LeftMenu .RadPanelBar .MenuItemTwo {color:#f25f23;}
+html body #section-menu #TopMenu .menu .CMLevel2Selected,
+html body #LeftMenu .RadPanelBar .MenuItemTwoClicked {color:#3D3935;}
+html body #section-menu #TopMenu .menu .CMLevel3,
+html body #LeftMenu .RadPanelBar .MenuItemThree {color:#f25f23;}
+html body #section-menu #TopMenu .menu .CMLevel3Selected,
+html body #LeftMenu .RadPanelBar .MenuItemThreeClicked {color:#3D3935;}
+html body #section-menu #TopMenu .menu .CMLevel4,
+html body #LeftMenu .RadPanelBar .MenuItemFour {color:#f25f23;}
+html body #section-menu #TopMenu .menu .CMLevel4Selected,
+html body #LeftMenu .RadPanelBar .MenuItemFourClicked {color:#3D3935;}
+
+html body #section-menu #TopMenu .menu .CMLevel2 .text,
+html body #LeftMenu .RadPanelBar .MenuItemTwo .rpText,
+html body #section-menu #TopMenu .menu .CMLevel3 .text,
+html body #LeftMenu .RadPanelBar .MenuItemThree .rpText,
+html body #section-menu #TopMenu .menu .CMLevel4 .text,
+html body #LeftMenu .RadPanelBar .MenuItemFour .rpText {border-color:#f25f23; border-color:rgba(242, 95, 35, 0.5);}
+html body #section-menu #TopMenu .menu .CMLevel2 .text:hover,
+html body #LeftMenu .RadPanelBar .MenuItemTwo .rpText:hover,
+html body #section-menu #TopMenu .menu .CMLevel3 .text:hover,
+html body #LeftMenu .RadPanelBar .MenuItemThree .rpText:hover,
+html body #section-menu #TopMenu .menu .CMLevel4 .text:hover,
+html body #LeftMenu .RadPanelBar .MenuItemFour .rpText:hover {border-color:#f25f23;}
+
+html body .nav-list #section-menu #TopMenu .menu .CMLevel1,
+html body .nav-list #LeftMenu .RadPanelBar .MenuItemOne {color:#f25f23;}
+html body .nav-list #section-menu #TopMenu .menu .CMLevel1 .text,
+html body .nav-list #LeftMenu .RadPanelBar .MenuItemOne .rpText {border-color:#f25f23; border-color:rgba(242, 95, 35, 0.5);}
+html body .nav-list #section-menu #TopMenu .menu .CMLevel1Selected,
+html body .nav-list #LeftMenu .RadPanelBar .MenuItemOneClicked {color:#3D3935;}
