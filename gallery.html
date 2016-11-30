@@ -39,13 +39,31 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/theme.min.css" rel="stylesheet" type="text/css" media="screen,print,pdf" />
     <link href="css/telerik-dropdown.css" rel="stylesheet" type="text/css" media="screen,print,pdf" />
-    <link href="css/australia.css" rel="stylesheet" type="text/css" media="print,pdf" />
     <link href="css/print.css" rel="stylesheet" type="text/css" media="print,pdf" />
     <script type="text/javascript" src="js/jquery.fitvids.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.cycle.all.2.72.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-     
+        
+    <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="js/flexslider.min.js"></script>
+    <script type="text/javascript">$(document).ready(function() {
+        $("#slide").flexslider({
+            directionNav:false,
+            controlNav:false,
+            start: function(slider) {
+                $('#next').click(function(event){
+                    event.preventDefault();
+                    slider.flexAnimate(slider.getTarget("next"));
+                });
+                $('#prev').click(function(event){
+                    event.preventDefault();
+                    slider.flexAnimate(slider.getTarget("previous"));
+                });
+            }
+        });
+    });
+    </script>
     <!--[if IE 9]>
     <link href="css/ie9.min.css" rel="stylesheet" type="text/css" media="screen,print,pdf" />
     <![endif]-->
@@ -150,8 +168,8 @@
                                             <div id="header-account">
                                                 
                                                 <ul class="bannerLinks account">
-                                                    <li><a href="#">Join</a></li>
-                                                    <li><a href="#">Log in</a></li>
+                                                    <li><a href="/austradecustomisations/userregistercheck.aspx">Join</a></li>
+                                                    <li><a href="https://www.austrade.gov.au/cmlogin.aspx">Log in</a></li>
                                                 </ul>
                                             </div>
                                             <div id="header-search" role="search">
@@ -283,211 +301,129 @@
                             </div>
                         </div>
                     </div>
-            </header> 
+                </header>
 
-            <div class="background bg-content">
-                <div class="block section cut-bg">
-                    <p class="icon icon-right icon-section">For International</p>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="banner-content col-xs-12 col-sm-12 col-md-12 col-lg-12">    
-                            <p>Invest in Australia</p>
-                            <h1>Why Australia</h1>
-                            <img src="/images/UserUploadedImages/1798/image-for-investors.jpg" />
+     
+    
+                <div class="background bg-content">
+                    <div class="block section cut-bg">
+                        <p class="icon icon-right icon-section">For International</p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="banner-content col-xs-12 col-sm-12 col-md-12 col-lg-12">    
+                                <p>Buy from Australia</p>
+                                <h1>Australian industry capabilities</h1>
+                                <img src="/images/UserUploadedImages/1798/image-for-buyers.jpg" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
-            <div id="page-content" class="page-content" role="main">
-                <div id="breadcrumbs" class="main-area regular">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <p id="breadcrumblabel">You are here:</p>
-                                <ol aria-labelledby="breadcrumblabel">
-                                    <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-                                    <a class="clsAltNormalOneSmaller" itemprop="url" href="http://www.austrade.gov.au/default.aspx"><span itemprop="title">Home</span></a>
-                                    </li>
-                                    <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a class="clsAltNormalOneSmaller" itemprop="url" href="http://www.austrade.gov.au/international"><span itemprop="title">For International</span></a>
-                                    </li>
-                                    <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a class="clsAltNormalOneSmaller" itemprop="url" href="http://www.austrade.gov.au/International/invest"><span itemprop="title">Invest in Australia</span></a>
-                                    </li>
-                                    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                                        <span class="clsBreadCrumbsHighlighted" itemprop="title">Why Australia</span>
-                                    </li>
-                                </ol>
-                                <div id="utility">
-                                    <ul>
-                                        <li><a href="#" title="Click to send this to a friend"><img alt="Click to send this to a friend" src="images/btn-email.png" /></a></li>
-                                        <li><a href="#" onclick="print();"><img src="images/ILoad27599___Source.png" alt="Print this page" title="Print this page" style="border: 0px solid;" /></a></li>
-                                        <li><a href="/about-austrade/contact-us"><img src="images/ILoad27595___Source.png" alt="Contact Austrade" title="Contact Austrade" style="border: 0px solid;" /></a></li>
-                                        <li><a href="#" id="large" class="font-change"><img src="images/ILoad27598___Source.png" alt="Increase font size" title="Increase font size" style="border: 0px solid;" /></a></li>
-                                        <li><a href="#" id="small" class="font-change"><img src="images/ILoad27597___Source.png" alt="Decrease font size" title="Decrease font size" style="border: 0px solid;" /></a></li>
-                                    </ul>
+                <div id="page-content" class="page-content" role="main">
+                    <div id="breadcrumbs" class="main-area regular">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <p id="breadcrumblabel">You are here:</p>
+                                    <ol aria-labelledby="breadcrumblabel">
+                                        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                            <a class="clsAltNormalOneSmaller" itemprop="url" href="#"><span itemprop="title">Home</span></a>
+                                        </li>
+                                        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                            <a class="clsAltNormalOneSmaller" itemprop="url" href="#"><span itemprop="title">For International</span></a>
+                                        </li>
+                                        <li itemscope="" itemtype="#">
+                                            <a class="clsAltNormalOneSmaller" itemprop="url" href="#"><span itemprop="title">Buy from Australia</span></a>
+                                        </li>
+                                        <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span class="clsBreadCrumbsHighlighted" itemprop="title">Australian industry capabilities</span>
+                                        </li>
+                                    </ol>
+                                    <div id="utility">
+                                        <ul>
+                                            <li><a href="#" title="Click to send this to a friend"><img alt="Click to send this to a friend" src="images/btn-email.png" /></a></li>
+                                            <li><a href="#" onclick="print();"><img src="images/ILoad27599___Source.png" alt="Print this page" title="Print this page" style="border: 0px solid;" /></a></li>
+                                            <li><a href="/about-austrade/contact-us"><img src="images/ILoad27595___Source.png" alt="Contact Austrade" title="Contact Austrade" style="border: 0px solid;" /></a></li>
+                                            <li><a href="#" id="large" class="font-change"><img src="images/ILoad27598___Source.png" alt="Increase font size" title="Increase font size" style="border: 0px solid;" /></a></li>
+                                            <li><a href="#" id="small" class="font-change"><img src="images/ILoad27597___Source.png" alt="Decrease font size" title="Decrease font size" style="border: 0px solid;" /></a></li>
+                                        </ul>
+        
     
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
     
-                <section class="main-area inverse">
-                    <div class="container">
-                        <div class="row">
-                            <nav id="section-menu" class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                <a id="sections-menu" class="sr-only">Section Menu</a>
-                                <div id="LeftMenu" style="width:100%;height:100%;" >
-                                    <div id="LeftMenuBar">
-                                        <div id="ctl00_ctl00_ctl00_nestedAreaTwo_contentAreaZone_LeftMenu1_Panelbar711" class="RadPanelBar RadPanelBar_NoSkin panelbar">
-                                        	<!-- 2014.2.724.45 -->
-                                            <ul class="rpRootGroup">
-                                        		<li class="rpItem rpFirst">
-                                                    <a href="#" title="Opportunities" class="rpLink MenuItemOne link rpExpandable"><span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Opportunities</span></span></a>
-                                                    <div class="rpSlide">
-                                        			<ul class="rpGroup rpLevel1 ">
-                                        				<li class="rpItem rpFirst">
-                                                            <a href="#" title="Agribusiness and food" class="rpLink MenuItemTwo link"><span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Agribusiness and food</span></span></a>
-                                                        </li>
-                                                        <li class="rpItem">
-                                                            <a href="#" title="Digital technologies" class="rpLink MenuItemTwo link"><span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Digital technologies</span></span></a>
-                                                        </li>
-                                                        <li class="rpItem">
-                                                            <a href="#" title="Major infrastructure" class="rpLink MenuItemTwo link"><span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Major infrastructure</span></span></a>
-                                                        </li>
-                                                        <li class="rpItem">
-                                                            <a href="#" title="Materials science and technologies" class="rpLink MenuItemTwo link">
-                                                                <span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Materials science and technologies</span></span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="rpItem">
-                                                            <a href="#" title="Medical science and technologies" class="rpLink MenuItemTwo link">
-                                                                <span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Medical science and technologies</span></span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="rpItem">
-                                                            <a href="#" title="Resources and energy" class="rpLink MenuItemTwo link"><span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Resources and energy</span></span></a>
-                                                        </li>
-                                                        <li class="rpItem">
-                                                            <a href="#" title="Tourism infrastructure" class="rpLink MenuItemTwo link"><span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Tourism infrastructure</span></span></a>
-                                                        </li>
-                                                        <li class="rpItem">
-                                                            <a href="#" title="Northern Australia" class="rpLink MenuItemTwo link"><span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Northern Australia</span></span></a>
-                                                        </li>
-                                                        <li class="rpItem">
-                                                            <a href="#" title="Tropical Medicine" class="rpLink MenuItemTwo link"><span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Tropical Medicine</span></span></a>
-                                                        </li>
-                                                        <li class="rpItem rpLast">
-                                                            <a href="#" title="Success Stories" class="rpLink MenuItemTwo link"><span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Success Stories</span></span></a>
-                                                        </li>
-                                        			</ul>
-                                        		</div>
-                                            </li>
-                                            <li class="rpItem">
-                                                <a href="#" title="Why Australia" class="rpLink MenuItemOne link MenuItemOneOver MenuItemOneClicked rpExpandable MenuItemOneClicked MenuItemOneOver">
-                                                    <span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Why Australia</span></span>
-                                                </a>
-                                            </li>
-                                            <li class="rpItem">
-                                                <a href="http://www.austrade.gov.au/International/Invest/Investor-Guide" title="Guide to investing" class="rpLink MenuItemOne link rpExpandable"><span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Guide to investing</span></span></a>
-                                                
-                                            </li>
-                                            <li class="rpItem">
-                                                <a href="http://www.austrade.gov.au/International/Invest/Investment-Specialists" title="Investment Specialists" class="rpLink MenuItemOne link rpExpandable">
-                                                    <span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Investment Specialists</span></span>
-                                                </a>
-                                            </li>
-                                            <li class="rpItem">
-                                                <a href="http://www.austrade.gov.au/International/Invest/Investor-Updates" title="Investor Updates" class="rpLink MenuItemOne link rpExpandable"><span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Investor Updates</span></span></a>
-                                                <div class="rpSlide">
-                                        			
-                                        		</div>
-                                            </li>
-                                            <li class="rpItem rpLast">
-                                                <a href="http://www.austrade.gov.au/International/Invest/resources" title="Resources" class="rpLink MenuItemOne link rpExpandable"><span class="rpOut rpNavigation"><span class="rpExpandHandle"></span><span class="rpText">Resources</span></span></a>
-                                                <div class="rpSlide">
-                                        			
-                                        		</div>
-                                            </li>
+                    <section class="main-area inverse">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
+                
+                                    <h2 class="uppercase">Australian industry capability</h2>
+                                    <ul class="block-list hover align wrap">
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/Agribusiness.jpg" />Agribusiness</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/Biotechnology.jpg" />Biotechnology</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/Building-Perth-Arena.jpg" />Building and construction</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/Consumer-Goods.jpg" />Consumer goods</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/Creative.jpg" />Creative industries</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/Environment.jpg" />Environment and energy</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/finance2.jpg" />Financial services</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/Food.jpg" />Food and beverage</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/Green-Building.jpg" />Green building</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/health.jpg" />Health and wellbeing</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/ICT.jpg" />ICT</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/Major-Sporting.jpg" />Major sporting events</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/manufacturing.jpg" />Manufacturing</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/Mining.jpg" />Mining, oil and gas</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/Professional-Services.jpg" />Professional services</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/Transport.jpg" />Rail</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/seniors-living-health.jpg" />Seniors living and health</a></li>
+                                        <li class="col-xs-12 col-sm-4 col-md-4 col-lg-3"><a href="#"><img alt="" src="images/Transport2.jpg" />Transport</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                                    <article class="block regular">
+                                        <h2 class="uppercase">International Websites</h2>
+                                        <ul class="inline-menu list-across section">
+                                            <li><a href="/Brazil" title="Austrade Brazil local website">Austrade Brazil</a></li>
+                                            <li><a href="/China" title="Austrade China local website">Austrade China</a></li>
+                                            <li><a href="/Czech-Republic" title="Austrade Czech Republic local website">Austrade Czech Republic</a></li>
+                                            <li><a href="/Hongkong" title="Austrade Hong Kong local website">Austrade Hong Kong</a></li>
+                                            <li><a href="/India" title="Austrade India local website">Austrade India</a></li>
+                                            <li><a href="/Japan" title="Austrade Japan local website">Austrade Japan</a></li>
+                                            <li><a href="/Korea" title="Austrade Korea local website">Austrade Korea</a></li>
+                                            <li><a href="/LATAM" title="Austrade LATAM local website">Austrade LATAM</a></li>
+                                            <li><a href="/MENA" title="Austrade MENA local website">Austrade MENA</a></li>
+                                            <li><a href="/Local-Sites/poland" title="Austrade Poland local website">Austrade Poland</a></li>
+                                            <li><a href="/Singapore" title="Austrade Singapore local website">Austrade Singapore</a></li>
+                                            <li><a href="/Taiwan" title="Australian Office Taiwan local website">Australian Office Taiwan</a></li>
+                                            <li><a href="/Local-Sites/thailand" title="Austrade Thailand local website">Austrade Thailand</a></li>
+                                            <li><a href="/UK" title="Austrade United Kingdom local international-websitesite">Austrade United Kingdom</a></li>
+                                            <li><a href="/Vietnam" title="Austrade Vietnam local website">Austrade Vietnam</a></li>
                                         </ul>
-                                    </div> 	
-                                </div> 
-                            </div> 
-                        </nav>
-                        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                             <div class="row align wrap">
-                                   <div class="block-list align wrap wrap-two" data-heading="number" data-main="has-icon section link-right" data-last="arrow arrow-right australia">
-
-                                        <h2>1 25th year of uninterrupted annual growth</h2>
-                                        <p class="icon icon-simple icon-large icon-left icon-graph">Australia provides a safe, low-risk environment in which to do business.</p>
-                                        <p><a href="/International/Invest/Why-Australia/Growth" title="25th year of uninterrupted annual growth" class="uppercase button tight">Learn more...</a></p>
-
-                                        <h2>2 Focused on innovation</h2>
-                                        <p class="icon icon-simple icon-large icon-left icon-int">Australia supports world-class, globally significant research and development (R&amp;D) opportunities.</p>
-                                        <p><a href="/International/Invest/Why-Australia/Innovation" title="Focused on innovation" class="uppercase button tight">Learn more...</a></p>
-
-                                        <h2>3 Talented workforce</h2>
-                                        <p class="icon icon-simple icon-large icon-left icon-people">Australia&rsquo;s labour force is among the most skilled and diverse in the world.</p>
-                                        <p><a href="/International/Invest/Why-Australia/Talent" title="Talented workforce" class="uppercase button tight">Learn more...</a></p>
-
-                                        <h2>4 Connected to Asia</h2>
-                                        <p class="icon icon-simple icon-large icon-left icon-handshake">Australia has deep, strong economic and cultural ties with the fast-growing Asia-Pacific region.</p>
-                                        <p><a href="/International/Invest/Why-Australia/Location" title="Connected to Asia" class="uppercase button tight">Learn more...</a></p>
-
-                                        <h2>5 A great place to do business</h2>
-                                        <p class="icon icon-simple icon-large icon-left icon-scales">Australia is one of the easiest places in the world to do business.</p>
-                                        <p><a href="/International/Invest/Why-Australia/Business" title="A great place to do business" class="uppercase button tight">Learn more...</a></p>
-
-                                        <h2 class="icon icon-simple icon-large icon-left icon-speech dark icon-only"><a href="/International/Invest/Investment-Specialists">Contact an Austrade <br />Investment Specialist</a></h2>
-                                        
-    
-
-                                   </div>
+                                    </article>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
+                    </section>
 
-        </div>
+                </div>
 
                 
-        <section id="section-footer" class="main-area inverse">
-            <div class="container">
-                <div class="row align">
+                <section id="section-footer" class="main-area inverse">
+                    <div class="container">
+                        <div class="row align">
+                            
 
-                    <h2 class="sr-only">Additional Information</h2>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <article class="block regular">
-                            <h3 class="uppercase">Benchmark Report</h3>
-                            <p class="icon icon-left icon-simple icon-large icon-stack icon-only australia">Compare Australia across key investment indicators &ndash; Economy, Skilled Labour, Business Environment, Lifestyle.<br />
-                            <br />
-                            <a href="/International/Invest/Resources/Benchmark-Report">Latest data</a><br />
-                            <br />
-                            <a href="/International/Invest/Resources">More reports</a></p>
-                        </article>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                        <article class="block regular">
-                            <h3 class="uppercase">Investor Updates</h3>
-                            <p>Stay up to date with informative articles about the investment climate in Australia.</p>
-                            <p><a href="/International/Invest/Investor-Updates" title="Investor Updates">Read more...</a></p>
-                        </article>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                        <article class="block regular">
-                            <h3 class="uppercase">Contact us</h3>
-                            <p class="icon icon-left icon-simple icon-small icon-phone"><strong>Call 13 28 78</strong></p>
-                            <p class="icon icon-left icon-simple icon-small icon-letter"><strong>Send us an email</strong> <a href="mailto:info@austrade.gov.au">info@austrade.gov.au</a> or use our <a href="/Contact/investing-in-australia-enquiries">Contact Form</a></p>
-                        </article>
-                    </div>
-                </div>
-             </div>
-        </section>
-        <footer id="footer" role="contentinfo">
+
+                        </div>
+                     </div>
+                </section>
+
+            <footer id="footer" role="contentinfo">
                 <h2 class="sr-only">Site Information</h2>
                 <section id="footer-top" class="main-area shade">
                     <div class="container">
@@ -605,5 +541,6 @@
             </footer>
 
         </div>
+
     </body>
 </html>
