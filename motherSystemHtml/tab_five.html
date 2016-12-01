@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotherSystem Tab Five</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="js/calendar/css/bootstrap-datetimepicker.css"/>  
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/calendar/js/moment-with-locales.js"/></script>
+    <script src="js/calendar/js/bootstrap-datetimepicker.js"/></script>
+    <script src="js/main.js"></script>
+</head>
+<body  class="list-page">
+    <header>
+        
+            <nav class="navbar navbar-default">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">ホームページ</a></li>
+                </ul>
+                <ul class="nav pull-right">
+        
+                    <li class="dropdown user-menu"><a class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> こんにちは</a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#" target="_blank">Profile</a></li>
+                            <li><a href="#" target="_blank">Setting</a></li>
+                            <li><a href="#" target="_blank">Logout</a></li>
+                        </ul>
+                    </li>
+        
+                </ul>
+       
+            </nav>
+            <ul class="list-inline menu">
+                <li><a href="#">メニュー項目</a></li>
+                <li><a href="#">メニュー項目</a></li>
+                <li><a href="#">メニュー項目</a></li>
+                <li><a href="#">メニュー項目</a></li>
+                <li class="active"><a href="#">メニュー項目</a></li>
+                <li><a href="#">アクティブ</a></li>
+                <li><a href="#">メニュー項目</a></li>
+                <li><a href="#">メニュー項目</a></li>
+                <li><a href="#">メニュー項目</a></li>
+                <li><a href="#">メニュー項目</a></li>
+                <li><a href="#">メニュー項目</a></li>
+                <li><a href="#">メニュー項目</a></li>
+            </ul>
+    </header>
+    
+    <div id="wrapper" class="content">
+        <div id="page-wrapper">
+          <div class="container-fluid no-padding">
+            <div class="row mrgr-0">
+                <ol class="breadcrumb">
+                    <li><a href="#">ホームページ</a></li>
+                </ol>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <!-- Nav tabs -->
+                    <!--ul class="nav nav-tabs font-18">
+                        <li class="active"><a href="#">プロジェクト一覧</a>
+                        </li>
+                        <li class=""><a href="/youcommitapp/admin/members" >メンバー一覧</a>
+                        </li>
+                    </ul-->
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        
+                        <div class="tab-pane fade active in" id="project">
+                            <div class='div-left inline search-filter width-100'>
+                                <form class="form-inline" method="get">
+                                    <div class="col-xs-2 col-sm-2" style="padding-left: 0;">
+                                        <div class="form-group width-100">
+                                            <label for="search-box-one">検索ボックス</label>
+                                            <input type="text" id="search-box-one" class="form-control width-100"/>
+                                            <ul class="auto-complete">
+                                                <li><a href="#">リストアイテム</a></li>
+                                                <li><a href="#">リストアイテム</a></li>
+                                                <li><a href="#">リストアイテム</a></li>
+                                                <li><a href="#">リストアイテム</a></li>
+                                                <li class="active"><a href="#">リストアイテム</a></li>
+                                                <li><a href="#">リストアイテム</a></li>
+                                                <li><a href="#">リストアイテム</a></li>
+                                                <li><a href="#">リストアイテム</a></li>
+                                                <li><a href="#">リストアイテム</a></li>
+                                                <li><a href="#">リストアイテム</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 col-sm-2">
+                                        <div class="form-group width-100">
+                                            <label for="search-box-two">検索ボックス</label>
+                                            <input type="text" id="search-box-two" class="form-control width-100"/>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xs-2 col-sm-2">
+                                        <div class="form-group width-100">
+                                            <label for="search-box-three">検索ボックス</label>
+                                            <input type="text" id="search-box-three" class="form-control width-100"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 col-sm-2">
+                                        <div class="form-group width-100">
+                                            <label for="search-box-four">検索ボックス</label>
+                                            <input type="text" id="search-box-four" class="form-control width-100"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 col-sm-2">
+                                        <div class="form-group">
+                                            <label></label>
+                                            <input type="checkbox" id="tick-here" class="c-checkbox left" value="" />
+                                            <span class="check-box-title left mrgt-10">ここにチェックする</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 col-sm-2">
+                                        <div class="form-group">
+                                            <label></label>
+                                            <button type="submit" class="btn btn-primary mrgt-4">サーチ</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <table class="table lg-table table-striped table-bordered table-hover dataTable no-footer table-date table-list">
+                                <thead class="width-100">
+                                    <tr role="row">
+                                        <th width="250px"></th>
+                                        <th class="center" width="120px">
+                                            <div class="thead-content">
+                                                <label>ポジション <span class="right-icon-search"></span></label>
+                                                <div class="thead-search-box">
+                                                    <span>入る</span>
+                                                    <input type="text" name="" value="" class="thead-search-input"/>
+                                                </div>        
+                                            </div>
+                                        </th>
+                                        <th class="center" width="120px">
+                                            <div class="thead-content">
+                                                <label>メンバー数 <span class="right-icon-search"></span></label>
+                                                <div class="thead-search-box">
+                                                    <span>入る</span>
+                                                    <input type="text" name="" value="" class="thead-search-input"/>
+                                                </div> 
+                                            </div>
+                                        </th>
+                                        <th class="center" width="160px">
+                                            <div class="thead-content" style="padding: 0 35px;">
+                                                <label>叙事文 <span class="right-icon-search"></span></label>
+                                                <div class="thead-search-box">
+                                                    <span>入る</span>
+                                                    <input type="text" name="" value="" class="thead-search-input"/>
+                                                </div> 
+                                            </div>
+                                        </th>
+                                        <th class="center" width="100px">
+                                            <div class="thead-content">
+                                                <label>トネーム <span class="right-icon-search"></span></label>
+                                                <div class="thead-search-box">
+                                                    <span>入る</span>
+                                                    <input type="text" name="" value="" class="thead-search-input"/>
+                                                </div>  
+                                            </div>
+                                        </th>
+                                        <th class="center" width="120px">
+                                            <div class="thead-content" style="padding: 0 15px;">
+                                                <label>苗字 <span class="right-icon-search"></span></label>
+                                                <div class="thead-search-box">
+                                                    <span>入る</span>
+                                                    <input type="text" name="" value="" class="thead-search-input"/>
+                                                </div> 
+                                            </div>
+                                        </th>
+                                        <th class="center" width="160px">
+                                            <div class="thead-content" style="padding: 0 25px;">
+                                                <label>電子メイル <span class="right-icon-search"></span></label>
+                                                <div class="thead-search-box">
+                                                    <span>入る</span>
+                                                    <input type="text" name="" value="" class="thead-search-input"/>
+                                                </div>  
+                                            </div>
+                                        </th>
+                                        <th class="center" width="160px">
+                                            <div class="thead-content" style="padding: 0 15px;">
+                                                <label>PC 電子メイル <span class="right-icon-search"></span></label>
+                                                <div class="thead-search-box">
+                                                    <span>入る</span>
+                                                    <input type="text" name="" value="" class="thead-search-input"/>
+                                                </div>  
+                                            </div>
+                                        </th>
+                                        <th class="center" width="120px">
+                                            <div class="thead-content">
+                                                <label>携帯電話 <span class="right-icon-search"></span></label>
+                                                <div class="thead-search-box">
+                                                    <span>入る</span>
+                                                    <input type="text" name="" value="" class="thead-search-input"/>
+                                                </div>  
+                                            </div>
+                                        </th>
+                                        <th class="center" width="120px">
+                                            <div class="thead-content">
+                                                <label>テレフォン <span class="right-icon-search"></span></label>
+                                                <div class="thead-search-box">
+                                                    <span>入る</span>
+                                                    <input type="text" name="" value="" class="thead-search-input"/>
+                                                </div> 
+                                            </div>
+                                        </th>
+                                        <th class="center" width="100px">
+                                            <div class="thead-content">
+                                                <label>アクション</label>
+                                            </div>
+                                        </th>
+                                        <th class="center" width="100px">
+                                            <div class="thead-content">
+                                                <label>アクション</label>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="width-100">
+                                    <tr class="height-50">
+                                        <td>
+                                            <div class="cell-content">
+                                                <ul class="tag-list">
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の位置の記述</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action1" value="1"/></div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action1" value="0"/></div></td>
+                                    </tr>
+                                    <tr class="height-50">
+                                        <td>
+                                            <div class="cell-content">
+                                                <ul class="tag-list">
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の位置の記述</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action2" value="1"/></div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action2" value="0"/></div></td>
+                                    </tr>
+                                    <tr class="height-50">
+                                        <td>
+                                            <div class="cell-content">
+                                                <ul class="tag-list">
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の位置の記述</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action3" value="1"/></div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action3" value="0"/></div></td>
+                                    </tr>
+                                    <tr class="height-50">
+                                        <td>
+                                            <div class="cell-content">
+                                                <ul class="tag-list">
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の位置の記述</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action4" value="1"/></div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action4" value="0"/></div></td>
+                                    </tr>
+                                    <tr class="height-50">
+                                        <td>
+                                            <div class="cell-content">
+                                                <ul class="tag-list">
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の位置の記述</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action5" value="1"/></div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action5" value="0"/></div></td>
+                                    </tr>
+                                    <tr class="height-50">
+                                        <td>
+                                            <div class="cell-content">
+                                                <ul class="tag-list">
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の位置の記述</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action6" value="1"/></div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action6" value="0"/></div></td>
+                                    </tr>
+                                    <tr class="height-50">
+                                        <td>
+                                            <div class="cell-content">
+                                                <ul class="tag-list">
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の位置の記述</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action7" value="1"/></div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action7" value="0"/></div></td>
+                                    </tr>
+                                    <tr class="height-50">
+                                        <td>
+                                            <div class="cell-content">
+                                                <ul class="tag-list">
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                    <li><a href="#" title="">キーワード</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の言葉の</div></td>
+                                        <td><div class="cell-content">人の位置の記述</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td class="center"><div class="cell-content">ネーム</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">xxxxxxxx@xxxxxx.xxx.jp</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td><div class="cell-content">0000-0000-0000</div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action8" value="1"/></div></td>
+                                        <td class="center"><div class="cell-content"><input type="radio" name="action8" value="0"/></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="div-left inline">
+                                <div class="dataTables_paginate paging_simple_numbers">
+                                    <div class="num-of-page">
+                                        <p>合計92項目 <span></span> 合計8ページ</p>    
+                                    </div>
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#" aria-label="最初">最初</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" aria-label="Previous">
+                                                <span class="glyphicon glyphicon-menu-left"></span>
+                                            </a>
+                                        </li>
+                                        <li class="paginate_button"><a href="#">1</a></li>
+                                        <li class="paginate_button"><a href="#">2</a></li>
+                                        <li class="paginate_button active"><a href="#">3</a></li>
+                                        <li class="paginate_button"><a href="#">4</a></li>
+                                        <li class="paginate_button"><a href="#">5</a></li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                <span class="glyphicon glyphicon-menu-right"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" aria-label="最終">最終</a>
+                                        </li>
+                                    </ul>
+                                    <div class="num-of-page">
+                                        <span>合計項目</span> 
+                                        <select class="select-page" name="page">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                        </select>  
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.row -->
+          </div>
+     </div>
+        
+
+    </div>  <!-- /#page-wrapper -->  
+
+<footer id="footer">
+    <div class="container-fluid">
+
+    </div>
+</footer>
+
+</body>
+</html>
