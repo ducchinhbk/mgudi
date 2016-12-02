@@ -60,24 +60,30 @@ $(document).ready(function(){
         connectWith: '.column',
         handle: '.cell-content',
         cursor: 'move',
-        placeholder: 'placeholder',
-        forcePlaceholderSize: true,
+        placeholder: false,
         opacity: 0.4,
         start: function(event, ui){
             rowspan = ui.helper.context.rowSpan;
-            trIndex = ui.helper.parents('tr').index();
-            for (i = 0; i < rowspan; i++) {
-                $('.tb-calendar tr').eq(trIndex).append('<td class="center dragbox"><div class="cell-content ui-sortable-handle"> </div></td>');
-                trIndex = trIndex + 1;
-            }
+            oldIndex = ui.helper.parents('tr').index();
+            firstIndex = oldIndex;
+            console.log(oldIndex);
+            for (i = 0; i < rowspan-1; i++) {
+                oldIndex = oldIndex + 1;
+                $('.tb-calendar tr').eq(oldIndex).append('<td class="center dragbox"><div class="cell-content ui-sortable-handle"></div></td>');
                 
-        },
-        stop: function(event, ui) {
-            trIndex = ui.item.parents('tr').index();
-            for(i = 0; i < rowspan; i++){
-                $('.tb-calendar tr').eq(trIndex).children('td').last().remove();
-                trIndex = trIndex + 1;
             }
+            $('.ui-sortable-placeholder').addClass('hidden');
+            //console.log(ui.item);
+        },
+        stop: function(event, ui){
+
+            newIndex = ui.item.parents('tr').index();
+            for (i = 0; i < rowspan; i++) {
+                $('.tb-calendar tr').eq(newIndex).children('td').last().remove();
+                newIndex = newIndex + 1;
+            }
+            $('.tb-calendar tr').eq(firstIndex).append('<td class="center dragbox"><div class="cell-content ui-sortable-handle"></div></td>');
+            $('.ui-sortable-placeholder').removeClass('hidden');
             /*Process Ajax To Save State Here*/
         }
     })
