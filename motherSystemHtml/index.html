@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="js/calendar/css/bootstrap-datetimepicker.css"/>  
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js" ></script>
-    <script src="js/calendar/js/moment-with-locales.js"/></script>
-    <script src="js/calendar/js/bootstrap-datetimepicker.js"/></script>
-    <script src="js/main.js"></script>
-    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/calendar/js/moment-with-locales.js"/></script>
+    <script type="text/javascript" src="js/calendar/js/bootstrap-datetimepicker.js"/></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/redips-drag/redips-drag-min.js"></script>
+    <script type="text/javascript" src="js/drag-script.js"></script>
 </head>
 <body>
     <header>
@@ -110,357 +110,379 @@
                                     </div>
                                 </form>
                             </div>
-                            <table class="table lg-table table-striped table-bordered table-hover dataTable no-footer table-date table-list table-calendar">
-                                <thead>
-                                    <tr role="row">
-                                        <th class="first-col"></th>
-                                        <th>
-                                            フォーカス戦略 <br/>
-                                            <span>(GL日付)</span><br/>
-                                            <span class="time">(GL時間)</span><br/>
-                                        </th>
-                                        <th>作成日 <br/>
-                                            <span>(GL日付)</span><br/>
-                                            <span class="time">(GL時間)</span><br/>
-                                        </th>
-                                        <th>メンバー数 <br/>
-                                            <span>(GL日付)</span><br/>
-                                            <span class="time">(GL時間)</span><br/>
-                                        </th>
-                                        <th>編集 <br/>
-                                            <span>(GL日付)</span><br/>
-                                            <span class="time">(GL時間)</span><br/>
-                                        </th>
-                                        <th>削除 <br/>
-                                            <span>(GL日付)</span><br/>
-                                            <span class="time">(GL時間)</span><br/>
-                                        </th>
-                                        <th>プロジェクト名 <br/>
-                                            <span>(GL日付)</span><br/>
-                                            <span class="time">(GL時間)</span><br/>
-                                        </th>
-                                        <th>フォーカス戦略 <br/>
-                                            <span>(GL日付)</span><br/>
-                                            <span class="time">(GL時間)</span><br/>
-                                        </th>
-                                        <th>作成日 <br/>
-                                            <span>(GL日付)</span><br/>
-                                            <span class="time">(GL時間)</span><br/>
-                                        </th>
-                                        <th>メンバー数 <br/>
-                                            <span>(GL日付)</span><br/>
-                                            <span class="time">(GL時間)</span><br/>
-                                        </th>
-                                        <th>編集 <br/>
-                                            <span>(GL日付)</span><br/>
-                                            <span class="time">(GL時間)</span><br/>
-                                        </th>
-                                        <th>削除 <br/>
-                                            <span>(GL日付)</span><br/>
-                                            <span class="time">(GL時間)</span><br/>
-                                        </th>
-                                        <th>プロジェクト名 <br/>
-                                            <span>(GL日付)</span><br/>
-                                            <span class="time">(GL時間)</span><br/>
-                                        </th>
-                                        <th>フォーカス戦略 <br/>
-                                            <span>(GL日付)</span><br/>
-                                            <span class="time">(GL時間)</span><br/>
-                                        </th>
-                                        <th>作成日 <br/>
-                                            <span>(GL日付)</span><br/>
-                                            <span class="time">(GL時間)</span><br/>
-                                        </th>
-                                        <th>メンバー数 <br/>   
-                                            <span>(GL日付)</span><br/>
-                                            <span class="time">(GL時間)</span><br/>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody class="tb-calendar">
-                                    <tr class="row-content column">
-                                        <td class="center first-col" rowspan="2">13:00 <br/> <span>13:30</span></td>
-                                        <td class="center dragbox" rowspan="2"><div class="cell-content cell-content-blue"><p>こんにちは世界</p><p>こんにちは世界</p><p>こんにちは世界</p></div></td>
-                                        <td class="center dragbox"><div class="cell-content cell-content-green">こんにちは世界</div></td>
-                                        <td class="center dragbox" rowspan="3"><div class="cell-content cell-content-green"> <p>こんにちは世界</p><p>こんにちは世界</p><p>こんにちは世界</p><p>こんにちは世界</p><p>こんにちは世界</p><p>こんにちは世界</p></div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                    <tr class="row-content column">
-                                        <td class="center dragbox"><div class="cell-content cell-content-blue">こんにちは世界</div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                    <tr class="row-content column">
-                                        <td class="center first-col" rowspan="2">14:00 <br/> <span>14:30</span></td>
-                                        <td class="center dragbox"><div class="cell-content"></div></td>
-                                        <td class="center dragbox"><div class="cell-content">こんにちは世界</div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                    <tr class="row-content column">
-                                        
-                                        <td class="center dragbox"><div class="cell-content"></div></td>
-                                        <td class="center dragbox"><div class="cell-content"></div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                    <tr class="row-content">
-                                        <td class="center first-col" rowspan="2">15:00 <br/> <span>15:30</span></td>
-                                        <td class="center dragbox"><div class="cell-content"></div></td>
-                                        <td class="center dragbox"><div class="cell-content"></div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                    <tr class="row-content column">
-                                        
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"></div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                    <tr class="row-content column">
-                                        <td class="center first-col" rowspan="2">16:00 <br/> <span>16:30</span></td>
-                                        <td class="center dragbox"><div class="cell-content">こんにちは世界</div></td>
-                                        <td class="center dragbox"><div class="cell-content"></div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                    <tr class="row-content column">
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                    <tr class="row-content column">
-                                        <td class="center first-col" rowspan="2">17:00 <br/> <span>17:30</span></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                    <tr class="row-content column">
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                    <tr class="row-content column">
-                                        <td class="center first-col" rowspan="2">18:00 <br/> <span>18:30</span></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                    <tr class="row-content column">
-                                        
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                    <tr class="row-content column">
-                                        <td class="center first-col" rowspan="2">19:00 <br/> <span>19:30</span></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                    <tr class="row-content column">
-                                        
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                    <tr class="row-content column">
-                                        <td class="center first-col" rowspan="2">20:00 <br/> <span>20:30</span></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                    <tr class="row-content column">
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                        <td class="center dragbox"><div class="cell-content"> </div></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div id="redips-drag">
+                                <table id="calendarMotherSystem" class="table lg-table table-striped table-bordered table-hover dataTable no-footer table-date table-list table-calendar">
+                                    <thead>
+                                        <tr role="row">
+                                            <th class="first-col redips-mark"></th>
+                                            <th class="redips-mark">
+                                                フォーカス戦略 <br/>
+                                                <span>(GL日付)</span><br/>
+                                                <span class="time">(GL時間)</span><br/>
+                                            </th class="redips-mark">
+                                            <th class="redips-mark">作成日 <br/>
+                                                <span>(GL日付)</span><br/>
+                                                <span class="time">(GL時間)</span><br/>
+                                            </th>
+                                            <th class="redips-mark">メンバー数 <br/>
+                                                <span>(GL日付)</span><br/>
+                                                <span class="time">(GL時間)</span><br/>
+                                            </th>
+                                            <th class="redips-mark">編集 <br/>
+                                                <span>(GL日付)</span><br/>
+                                                <span class="time">(GL時間)</span><br/>
+                                            </th>
+                                            <th class="redips-mark">削除 <br/>
+                                                <span>(GL日付)</span><br/>
+                                                <span class="time">(GL時間)</span><br/>
+                                            </th>
+                                            <th class="redips-mark">プロジェクト名 <br/>
+                                                <span>(GL日付)</span><br/>
+                                                <span class="time">(GL時間)</span><br/>
+                                            </th>
+                                            <th class="redips-mark">フォーカス戦略 <br/>
+                                                <span>(GL日付)</span><br/>
+                                                <span class="time">(GL時間)</span><br/>
+                                            </th>
+                                            <th class="redips-mark">作成日 <br/>
+                                                <span>(GL日付)</span><br/>
+                                                <span class="time">(GL時間)</span><br/>
+                                            </th>
+                                            <th class="redips-mark">メンバー数 <br/>
+                                                <span>(GL日付)</span><br/>
+                                                <span class="time">(GL時間)</span><br/>
+                                            </th>
+                                            <th class="redips-mark">編集 <br/>
+                                                <span>(GL日付)</span><br/>
+                                                <span class="time">(GL時間)</span><br/>
+                                            </th>
+                                            <th class="redips-mark">削除 <br/>
+                                                <span>(GL日付)</span><br/>
+                                                <span class="time">(GL時間)</span><br/>
+                                            </th>
+                                            <th class="redips-mark">プロジェクト名 <br/>
+                                                <span>(GL日付)</span><br/>
+                                                <span class="time">(GL時間)</span><br/>
+                                            </th>
+                                            <th class="redips-mark">フォーカス戦略 <br/>
+                                                <span>(GL日付)</span><br/>
+                                                <span class="time">(GL時間)</span><br/>
+                                            </th>
+                                            <th class="redips-mark">作成日 <br/>
+                                                <span>(GL日付)</span><br/>
+                                                <span class="time">(GL時間)</span><br/>
+                                            </th>
+                                            <th class="redips-mark">メンバー数 <br/>   
+                                                <span>(GL日付)</span><br/>
+                                                <span class="time">(GL時間)</span><br/>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="tb-calendar">
+                                        <tr class="row-content column">
+                                            <th class="center first-col redips-mark" rowspan="2">13:00 <br/> <span>13:30</span></th>
+                                            <td class="center dragbox" rowspan="2"><div class="cell-content cell-content-blue redips-drag"><p>こんにちは世界</p><p>こんにちは世界</p><p>こんにちは世界</p></div></td>
+                                            <td class="center dragbox"><div class="cell-content cell-content-green redips-drag">こんにちは世界</div></td>
+                                            <td class="center dragbox" rowspan="3"><div class="cell-content cell-content-green redips-drag"><p>こんにちは世界</p><p>こんにちは世界</p><p>こんにちは世界</p></div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            
+                                        </tr>
+                                        <tr class="row-content column">
+                                            <th class="hidden dragbox redips-mark"></th>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            
+                                        </tr>
+                                        <tr class="row-content column">
+                                            <th class="center first-col redips-mark" rowspan="2">14:00 <br/> <span>14:30</span></th>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag">こんにちは世界</div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            
+                                        </tr>
+                                        <tr class="row-content column">
+                                            <th class="hidden dragbox redips-mark"></th>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            
+                                        </tr>
+                                        <tr class="row-content column">
+                                            <th class="center first-col redips-mark" rowspan="2">15:00 <br/> <span>15:30</span></th>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag">こんにちは世界</div></td>
+                                            
+                                        </tr>
+                                        <tr class="row-content column">
+                                            <th class="hidden dragbox redips-mark"></th>
+                                            <td class="center dragbox "><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            
+                                        </tr>
+                                        <tr class="row-content column">
+                                            <th class="center first-col redips-mark" rowspan="2">16:00 <br/> <span>16:30</span></th>
+                                            <td class="center dragbox"><div class="cell-content redips-drag">こんにちは世界</div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            
+                                        </tr>
+                                        <tr class="row-content column">
+                                            <th class="hidden dragbox redips-mark"></th>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            
+                                        </tr>
+                                        <tr class="row-content column">
+                                            <th class="center first-col redips-mark" rowspan="2">17:00 <br/> <span>17:30</span></th>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            
+                                        </tr>
+                                        <tr class="row-content column">
+                                            <th class="hidden dragbox redips-mark"></th>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            
+                                        </tr>
+                                        <tr class="row-content column">
+                                            <th class="center first-col redips-mark" rowspan="2">18:00 <br/> <span>18:30</span></th>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            
+                                        </tr>
+                                        <tr class="row-content column">
+                                            <th class="hidden dragbox redips-mark"></th>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            
+                                        </tr>
+                                        <tr class="row-content column">
+                                            <th class="center first-col redips-mark" rowspan="2">19:00 <br/> <span>19:30</span></th>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            
+                                        </tr>
+                                        <tr class="row-content column">
+                                            <th class="hidden dragbox redips-mark"></th>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            
+                                        </tr>
+                                        <tr class="row-content column">
+                                            <th class="center first-col redips-mark" rowspan="2">20:00 <br/> <span>20:30</span></th>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            
+                                        </tr>
+                                        <tr class="row-content column">
+                                            <th class="hidden dragbox redips-mark"></th>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            <td class="center dragbox"><div class="cell-content redips-drag"> </div></td>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>

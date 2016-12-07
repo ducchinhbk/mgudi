@@ -56,37 +56,88 @@ $(document).ready(function(){
         $(this).parents('.form-group').children('.auto-complete').show();
     });
 
-    $('.tb-calendar .column').sortable({
-        connectWith: '.column',
-        handle: '.cell-content',
-        cursor: 'move',
-        placeholder: false,
-        opacity: 0.4,
-        start: function(event, ui){
-            rowspan = ui.helper.context.rowSpan;
-            oldIndex = ui.helper.parents('tr').index();
-            firstIndex = oldIndex;
-            console.log(oldIndex);
-            for (i = 0; i < rowspan-1; i++) {
-                oldIndex = oldIndex + 1;
-                $('.tb-calendar tr').eq(oldIndex).append('<td class="center dragbox"><div class="cell-content ui-sortable-handle"></div></td>');
-                
-            }
-            $('.ui-sortable-placeholder').addClass('hidden');
-            //console.log(ui.item);
-        },
-        stop: function(event, ui){
+    
 
-            newIndex = ui.item.parents('tr').index();
-            for (i = 0; i < rowspan; i++) {
-                $('.tb-calendar tr').eq(newIndex).children('td').last().remove();
-                newIndex = newIndex + 1;
-            }
-            $('.tb-calendar tr').eq(firstIndex).append('<td class="center dragbox"><div class="cell-content ui-sortable-handle"></div></td>');
-            $('.ui-sortable-placeholder').removeClass('hidden');
-            /*Process Ajax To Save State Here*/
-        }
-    })
-    .disableSelection();
+    // var newIndex = 0;
+    // var cellIndex = 0;
+    // var tblCalendar = $('.tb-calendar');
+    // var columnContent = '<td class="center dragbox"><div class="cell-content ui-sortable-handle"></div></td>';
+     
+    // var start_handle = function(event, ui){
+    //     rowspan = ui.helper.context.rowSpan;
+    //     oldIndex = ui.helper.parents('tr').index();
+    //     firstIndex = oldIndex;
+    //     cellIndex = ui.helper.context.cellIndex;
+    //     for (i = 0; i < rowspan-1; i++) {
+    //         oldIndex = oldIndex + 1;
+    //         tblCalendar.children('tr').eq(oldIndex).children('td').eq(cellIndex).after(columnContent);
+                
+    //     }
+    // };
+
+    // var change_handle = function(event, ui){
+       
+
+    // };
+
+
+    // var stop_handle = function(event, ui){
+    //     newIndex = ui.item.parents('tr').index();
+    //     cellIndex = ui.item.context.cellIndex;
+    //     for (i = 0; i < rowspan; i++) {
+    //         tblCalendar.children('tr').eq(newIndex).children('td').children('.cell-content:not(:has(*))').parents('td').eq(i).remove();
+    //         newIndex = newIndex + 1;
+    //     }
+    //     tblCalendar.children('tr').eq(firstIndex).append(columnContent);
+    // };
+
+    // tblCalendar.find('.column').sortable({
+    //     connectWith: '.column',
+    //     scrollSensitivity: 250,
+    //     //revert: true,
+    //     handle: '.cell-content',
+    //     cursor: 'move',
+    //     placeholder: 'highlight',
+    //     opacity: 0.4,
+    //     start: start_handle,
+    //     stop: stop_handle,
+    //     change: change_handle,
+    //     start: function(event, ui){
+
+    //         rowspan = ui.helper.context.rowSpan;
+    //         oldIndex = ui.helper.parents('tr').index();
+    //         firstIndex = oldIndex;
+    //         cellIndex = ui.helper.context.cellIndex;
+    //         for (i = 0; i < rowspan-1; i++) {
+    //             oldIndex = oldIndex + 1;
+    //             $('.tb-calendar tr').eq(oldIndex).children('td').eq(cellIndex).after('<td class="center dragbox"><div class="cell-content ui-sortable-handle"></div></td>');
+                
+    //         }
+            
+    //         console.log(ui.helper.context.cellIndex);
+    //     },
+    //     change: function(event, ui){
+            
+    //         // overRowIndex = $('.highlight').parents('tr').index();
+    //         // overCellIndex = $('.highlight').parents('tr').children('td').children('.cell-content:not(:has(*))').last().parents('td').index();
+    //         // $('.highlight').parents('tr').children('td').eq(overCellIndex).addClass('drap-in');
+    //         // $('.highlight').addClass('drap-in');
+    //         // console.log(ui.item); 
+    //     },
+        
+    //     stop: function(event, ui){
+            
+    //         newIndex = ui.item.parents('tr').index();
+    //         cellIndex = ui.item.context.cellIndex;
+    //         for (i = 0; i < rowspan; i++) {
+    //             $('.tb-calendar tr').eq(newIndex).children('td').children('.cell-content:not(:has(*))').parents('td').eq(i).remove();
+    //             newIndex = newIndex + 1;
+    //         }
+    //         //$('.tb-calendar tr').eq(firstIndex).append('<td class="center dragbox"><div class="cell-content ui-sortable-handle"></div></td>');
+           
+    //     }
+    // })
+    // .disableSelection();
 
 });
+
