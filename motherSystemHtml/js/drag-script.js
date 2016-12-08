@@ -79,12 +79,16 @@ redipsInit = function () {
 
 		for(var i=1; i< rowSpan; i++) {
 			desRowIndex = desRowIndex +1;
-			$('#calendarMotherSystem tbody tr:eq('+desRowIndex+')').children('td').eq(desColumnIndex).remove();
-			
+			if(desColumnIndex < 15) {
+				$('#calendarMotherSystem tbody tr:eq('+desRowIndex+')').children('td').eq(desColumnIndex).remove();
+			}
+			if(desColumnIndex >= 15) {
+				$('#calendarMotherSystem tbody tr:eq('+desRowIndex+')').children('td').last().remove();
+			}
 		}
 		$('#calendarMotherSystem tbody tr').each(function() {
 			$(this).children('td').eq(15).remove();
-			console.log($(this).children('td'));
+			
 		});
 		//console.log(sourceDom);
 	};
